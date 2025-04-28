@@ -7,11 +7,9 @@ use Illuminate\View\Component;
 class FormTextarea extends Component
 {
     public function __construct(
-        public bool    $autoGrow = false,
+        public bool $autoGrow,
         public ?string $name,
-    )
-    {
-    }
+    ) {}
 
     public function classes(): string
     {
