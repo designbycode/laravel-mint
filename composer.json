@@ -1,6 +1,7 @@
 {
   "name": "designbycode/laravel-mint",
   "description": "a fresh component library for Laravel",
+  "version": "0.0.1",
   "keywords": [
     "designbycode",
     "laravel",
