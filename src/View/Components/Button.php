@@ -11,12 +11,13 @@ class Button extends Component
     public readonly ButtonVariant $resolvedVariant;
 
     public function __construct(
-        public readonly string $type = 'submit',
+        public readonly string      $type = 'submit',
         public string|ButtonVariant $variant = 'fresh',
-        public readonly string $color = 'primary',
-        public readonly string $size = 'md',
-        public readonly bool $loading = false,
-    ) {
+        public readonly string      $color = 'primary',
+        public readonly string      $size = 'md',
+        public readonly bool        $loading = false,
+    )
+    {
         $this->resolvedVariant = $variant instanceof ButtonVariant
             ? $variant
             : ButtonVariant::from(strtolower($variant));
@@ -28,7 +29,7 @@ class Button extends Component
             ? $this->variant
             : ButtonVariant::from($this->variant);
 
-        $baseClasses = 'inline-flex text-shadow-sm dark:text-shadow-none cursor-pointer items-center justify-center disabled:opacity-50 font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-3 transition-colors duration-200';
+        $baseClasses = 'inline-flex text-shadow-xs cursor-pointer items-center justify-center disabled:opacity-50 font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-3 transition-colors duration-200';
 
         $sizeClasses = [
             'xs' => 'px-1.5 py-0.5 text-xs',

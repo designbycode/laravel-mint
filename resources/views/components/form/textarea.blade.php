@@ -16,7 +16,7 @@
         @class([
         $classes,
         'resize-none overflow-hidden' => $autoGrow,
-        'border-rose-600' => $errors->has($name)
+        'border-danger-600' => $errors->has($name)
         ])
     >
         {{ $slot }}
