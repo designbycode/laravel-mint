@@ -9,10 +9,7 @@ class FormError extends Component
 {
     public function __construct(
         public ?string $for
-    )
-    {
-    }
-
+    ) {}
 
     public function classes(): string
     {
