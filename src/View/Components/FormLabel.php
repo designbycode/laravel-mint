@@ -9,7 +9,7 @@ class FormLabel extends Component
 {
     public function classes(): string
     {
-        return 'block text-sm font-medium text-mute-700 dark:text-mute-300 ';
+        return 'block text-sm font-medium';
     }
 
     public function render(): View
